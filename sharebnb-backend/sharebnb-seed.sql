@@ -1,0 +1,60 @@
+INSERT INTO users (username, password, first_name, last_name, email, phone, is_admin)
+VALUES
+    ('testUser1', '$2b$12$ZrgLN.tR45zznBNxED1/BeWUc0KXe7TP1xfc5dPbIoH0hKdYfcDJy', 'first1', 'last1', 'e@e.com', '8187172020', FALSE),
+    ('testUser2', '$2b$12$ZrgLN.tR45zznBNxED1/BeWUc0KXe7TP1xfc5dPbIoH0hKdYfcDJy', 'first2', 'last2', 'e@e.com', '8187172020', FALSE),
+    ('adminUser', '$2b$12$ZrgLN.tR45zznBNxED1/BeWUc0KXe7TP1xfc5dPbIoH0hKdYfcDJy', 'first3', 'last3', 'e@e.com', '8187172020', TRUE);
+
+INSERT INTO properties (title, address, description, price, owner)
+VALUES
+    ('Awesome Oasis', '3412 awesome street, indio', 'Charming bungalow in a quiet suburban neighborhood', 250, 'testUser1'),
+    ('Peaceful Haven ', '1928 bad street, las vegas', 'A serene and quiet getaway perfect for relaxation', 300, 'testUser2'),
+    ('Tranquil Retreat', '3201 tranquil avenue, chatsworth', 'A serene and quiet getaway perfect for relaxation', 275, 'testUser1'),
+    ('Urban Loft', '789 urban road, san diego', 'Stylish urban loft with modern amenities and close to city life', 320, 'testUser2'),
+    ('Country Home', '321 country lane, silverlake', 'Spacious country home with beautiful natural surroundings', 375, 'adminUser'),
+    ('Quiet Escape', '2130 cool street, indio', 'worse1', 350, 'adminUser'),
+    ('Lake View Condo', '9302 lakeview circle, cherry creek', 'Condo with a beautiful view of the lake and modern amenities', 295, 'testUser1'),
+    ('mountain cabin', '1230 mountain pass, sundubu', 'Cozy cabin located in the mountains, perfect for a peaceful retreat', 360, 'testUser2'),
+    ('suburban bungalow', '303 suburban street, galbi way', 'Charming bungalow in a quiet suburban neighborhood', 330, 'adminUser'),
+    ('downtown flat', '404 downtown plaza, tomorrow world', 'Modern flat in the heart of downtown, close to shopping and nightlife', 350, 'testUser1'),
+    ('beachfront villa', '505 beachside boulevard, canoga park', 'Luxurious villa right on the beach, ideal for summer getaways', 400, 'testUser2'),
+    ('rustic farmhouse', '606 farm road, lowland park', 'Spacious farmhouse with rustic charm and expansive fields', 380, 'adminUser');
+
+INSERT INTO images (key, property_id)
+VALUES
+    ('barbie.jpg', 1),
+    ('getaway.jpg', 2),
+    ('tin.jpg', 3),
+    ('desert.jpg', 4),
+    ('haunted.jpg', 5),
+    ('tiny.jpg', 6),
+    ('forrest.jpg', 7),
+    ('eames.jpg', 8),
+    ('water.jpg', 9),
+    ('uc.jpg', 10),
+    ('yard.jpg', 11),
+    ('nice.jpg', 12),
+    ('test.jpg-1713483440491-0', 12),
+    ('hills.jpg', 1),
+    ('porch.jpg', 2),
+    ('white.jpg', 3),
+    ('inside.jpg', 4),
+    ('groovy.jpg', 5),
+    ('fur.jpg', 6),
+    ('chair.jpg', 7),
+    ('blue.jpg', 8),
+    ('togo.jpg', 9),
+    ('boot.jpg', 10),
+    ('window.jpg', 11),
+    ('indio.jpg', 12),
+    ('machina.jpg', 1),
+    ('pool.jpg', 2),
+    ('case.jpg', 3),
+    ('darkout.jpg', 4),
+    ('large.jpg', 5),
+    ('jan.jpg', 6),
+    ('cs22.jpg', 7),
+    ('america.jpg', 8),
+    ('last.jpg', 9),
+    ('another.jpg', 10),
+    ('views.jpg', 11),
+    ('shaggy.jpg', 12)

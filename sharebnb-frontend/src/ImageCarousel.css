@@ -1,0 +1,11 @@
+/* ImageCarousel.css */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-inner {
+  height: 450px; /* adjust this based on your design needs */
+}
