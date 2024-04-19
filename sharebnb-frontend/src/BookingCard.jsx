@@ -23,10 +23,10 @@ function BookingCard({ booking }) {
     const dateEndDate = new Date(booking.endDate);
     const formattedEndDate = dateEndDate.toLocaleDateString();
 
-    console.log("property %o", { property });
+    // console.log("property %o", { property });
 
     useEffect(function fetchPropertyWhenMounted() {
-        console.log("Inside of fetchProperty use effect.");
+        // console.log("Inside of fetchProperty use effect.");
         async function fetchProperty() {
             const resp = await SharebnbApi.getProperty(booking.propertyId);
             setProperty(resp);

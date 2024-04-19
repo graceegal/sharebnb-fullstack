@@ -35,8 +35,6 @@ router.post("/",
   ensureLoggedIn,
   upload.array('images', 5),
   async function (req, res, next) {
-    console.log("*****req.body CREATE", req.body);
-    console.log("*****req.files CREATE", req.files);
     const q = req.body;
     q.price = +q.price;
 
@@ -57,7 +55,6 @@ router.post("/",
     const propertyId = newProperty.id;
 
     await Promise.all(req.files.map(async (file, idx) => {
-      console.log("inside Promise file", file);
       const key = `${file.originalname}-${Date.now()}-${idx}`;
       await putIntoBucket(key, file.buffer);
       await Image.create({ propertyId: propertyId, key: key });

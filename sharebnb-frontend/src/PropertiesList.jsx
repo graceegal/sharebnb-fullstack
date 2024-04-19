@@ -17,10 +17,10 @@ import SearchForm from './SearchForm';
 function PropertiesList() {
     const [properties, setProperties] = useState({ data: null, searchTerm: "" });
 
-    console.log("PropertiesList %o", { properties });
+    // console.log("PropertiesList %o", { properties });
 
     useEffect(function fetchPropertiesWhenMounted() {
-        console.log("Inside of fetchPropertiesWhenMounted use effect");
+        // console.log("Inside of fetchPropertiesWhenMounted use effect");
         search(properties.searchTerm);
     }, []);
 

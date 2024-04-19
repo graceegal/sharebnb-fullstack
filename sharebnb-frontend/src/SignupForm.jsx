@@ -29,7 +29,7 @@ function SignupForm({ signup }) {
     const [formData, setFormData] = useState(initialState);
     const [errors, setErrors] = useState([]);
 
-    console.log("signup form %o", { formData, errors });
+    // console.log("signup form %o", { formData, errors });
 
     const navigate = useNavigate();
 

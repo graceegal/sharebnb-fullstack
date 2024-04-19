@@ -5,13 +5,13 @@ import { useState } from "react";
  * props: handleSearch()
  * state: searchTerm ("")
  *
- * PropertiesList -> SearchForm 
+ * PropertiesList -> SearchForm
 */
 
 function SearchForm({ handleSearch }) {
     const [searchTerm, setSearchTerm] = useState("");
 
-    console.log("searchForm %o", { searchTerm });
+    // console.log("searchForm %o", { searchTerm });
 
     /** handle input change */
     function handleChange(evt) {

@@ -33,9 +33,8 @@ async function putIntoBucket(key, file) {
   try {
     const result = await s3Client.send(
       data);
-      console.log("result", result)
   } catch (error) {
-    console.log("putIntoBucket errors: ", error);
+    console.debug("putIntoBucket errors: ", error);
   }
 }
 

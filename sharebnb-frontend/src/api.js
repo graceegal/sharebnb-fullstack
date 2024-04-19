@@ -55,10 +55,8 @@ class SharebnbApi {
   /** Get list of properties, with optional filter that takes in searchTerm  */
 
   static async getProperties(searchTerm) {
-    console.log("searchTerm***", searchTerm);
     const searchTermParam = searchTerm ? { titleLike: searchTerm } : {};
     const res = await this.request("properties", searchTermParam);
-    console.log("inAPI***", res);
     return res.properties;
   }
 

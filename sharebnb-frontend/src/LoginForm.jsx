@@ -24,7 +24,7 @@ function LoginForm({ login }) {
     const [formData, setFormData] = useState(initialState);
     const [errors, setErrors] = useState([]);
 
-    console.log("login form %o", { formData, errors });
+    // console.log("login form %o", { formData, errors });
 
     const navigate = useNavigate();
 

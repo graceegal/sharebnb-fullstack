@@ -27,7 +27,7 @@ function PropertyForm() {
     const [images, setImages] = useState([]);
     const [errors, setErrors] = useState([]);
 
-    console.log("PropertyForm %o", { formData, images, errors });
+    // console.log("PropertyForm %o", { formData, images, errors });
 
     const navigate = useNavigate();
 

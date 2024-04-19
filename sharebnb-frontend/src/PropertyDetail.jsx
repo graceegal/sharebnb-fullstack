@@ -25,12 +25,12 @@ function PropertyDetail() {
     const { id } = useParams();
     const [property, setProperty] = useState(null);
 
-    console.log("PropertyDetail %o", { id, property });
+    // console.log("PropertyDetail %o", { id, property });
 
     const { currUser } = useContext(userContext);
 
     useEffect(function fetchPropertyWhenMounted() {
-        console.log("Inside of fetchPropertyWhenMounted use effect");
+        // console.log("Inside of fetchPropertyWhenMounted use effect");
         async function fetchProperty() {
             const resp = await SharebnbApi.getProperty(id);
             setProperty(resp);

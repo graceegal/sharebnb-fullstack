@@ -15,7 +15,7 @@ function UserBookings() {
     const { currUser } = useContext(userContext);
     const bookings = currUser.bookings;
 
-    console.log("userBookings", bookings);
+    // console.log("userBookings", bookings);
 
     return (
         <div className='row justify-content-center'>

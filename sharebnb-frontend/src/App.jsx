@@ -26,10 +26,10 @@ function App() {
   const [currUser, setCurrUser] = useState({});
   const [token, setToken] = useState(localStorage.getItem("token"));
 
-  console.log("app %o", { token, currUser, isLoaded });
+  // console.log("app %o", { token, currUser, isLoaded });
 
   useEffect(function fetchUserOnLoadAndTokenChange() {
-    console.log("Inside fetchUserOnLoadAndTokenChange use Effect");
+    // console.log("Inside fetchUserOnLoadAndTokenChange use Effect");
     async function fetchUser() {
       if (token) {
         SharebnbApi.token = token;

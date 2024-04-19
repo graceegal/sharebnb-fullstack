@@ -31,7 +31,7 @@ function BookingForm({ propertyId }) {
         type: "danger"
     });
 
-    console.log("BookingForm %o", { startDate, endDate, alerts });
+    // console.log("BookingForm %o", { startDate, endDate, alerts });
 
     const navigate = useNavigate();
 
