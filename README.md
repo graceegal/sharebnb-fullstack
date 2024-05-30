@@ -2,7 +2,7 @@
 
 Sharebnb is a full stack web application for people to share and rent out their outdoor spaces with others. As we move towards a world where people share more and more things, it’s time we build an application where users can share outdoor spaces like backyards or pools!
 
-## [Live Demo Link]()
+## [Live Demo Link](https://sharebnb-getaway.surge.sh/)
 
 ![ShareBnB Demo](frontend/public/sharebnb-demo.gif)
 
