@@ -38,9 +38,10 @@ To get started with ShareBnB, follow the steps below:
 
 1. Clone the repository to your local machine.
 2. Navigate to the backend directory: `cd backend`.
-3. Install backend dependencies with `npm install`.
-4. Start the backend server with `npm start`.
-5. The backend server will start running at `http://localhost:3001`.
+3. Create and seed database with `psql -f sharebnb.sql`.
+4. Install backend dependencies with `npm install`.
+5. Start the backend server with `npm start`.
+6. The backend server will start running at `http://localhost:3001`.
 
 ### Frontend
 
